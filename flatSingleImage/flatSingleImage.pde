@@ -8,8 +8,8 @@ fullScreen();
 //Population
 pic = loadImage("GettyImages-1133605325-scaled-e1617227898456 (1).jpg"); //Dimensions: width 800, height 600
 //Find the larger dimenstion for aspect ratio
-int picWidth = 900;
-int picHeight = 700;
+int picWidth = 2220;
+int picHeight = 1478;
 if ( picWidth >= picHeight ) {
   largerDimension = picWidth;
   smallerDimension = picHeight;
@@ -25,7 +25,7 @@ if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
 if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
-println(imageWidthRatio, imageHeightRatio, smallerDimension/largerDimension, 700.0/900.0); //Verify variable values
+println(imageWidthRatio, imageHeightRatio, smallerDimension/largerDimension, 1478.0/2220.0); //Verify variable values
 //Note: println() also verifies decimal places, compiler will truncate
 //Answers: must be 1.0 and between 0 and 1 (decimal)
 //Ratio 1.0 similar to style="width:100%" (websites)
