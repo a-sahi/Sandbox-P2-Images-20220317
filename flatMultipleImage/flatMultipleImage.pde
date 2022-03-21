@@ -15,8 +15,8 @@ int pic1Width = 2220;
 int pic1Height = 1478;
 int pic2Width = 1920;
 int pic2Height = 1080;
-int largerPic1Dimension, smallerPic1Dimension;
-Boolean widthPic1Larger=false, heightPic1Larger=false;
+int largerPic1Dimension, smallerPic1Dimension, largerPic2Dimension, smallerPic2Dimension;
+Boolean widthPic1Larger=false, heightPic1Larger=false, widthPic2Larger=false, heightPic2Larger=false;
 //
 if ( pic1Width >= pic1Height ) { //ID Larger Dimension: Landscape and Square
   largerPic1Dimension = pic1Width;
@@ -28,7 +28,15 @@ if ( pic1Width >= pic1Height ) { //ID Larger Dimension: Landscape and Square
   heightPic1Larger = true;
 } //End pic1 larger dimesion ID
 //
-if () {} else {} //End pic2 larger dimesion ID
+if ( pic2Width >= pic2Height ) { //ID Larger Dimension: Landscape and Square
+  largerPic2Dimension = pic2Width;
+  smallerPic2Dimension = pic2Height;
+  widthPic2Larger = true;
+} else { //ID Larger Dimension: Portrait
+  largerPic2Dimension = pic2Height;
+  smallerPic2Dimension = pic2Width;
+  heightPic2Larger = true;
+} //End pic2 larger dimesion ID
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
