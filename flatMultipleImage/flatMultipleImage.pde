@@ -10,11 +10,23 @@ fullScreen();
 pic1 = loadImage("GettyImages-1133605325-scaled-e1617227898456 (1).jpg"); //Dimensions: 2220 width, 1478 height
 pic2 = loadImage("85246.jpg"); //Dimensions: 1920 width, 1080 height
 //
-//Aspect Ration Calculations
+//Aspect Ratio Calculations
 int pic1Width = 2220;
 int pic1Height = 1478;
 int pic2Width = 1920;
 int pic2Height = 1080;
+int largerPic1Dimension, smallerPic1Dimension;
+Boolean widthPic1Larger;
+//
+if ( pic1Width >= pic1Height ) { //ID Larger Dimension: Landscape and Square
+  largerPic1Dimension = pic1Width;
+  smallerPic1Dimension = pic1Height;
+  widthPic1Larger = true;
+} else { //ID Larger Dimension: Portrait
+  
+} //End pic1 larger dimesion ID
+//
+if () {} else {} //End pic2 larger dimesion ID
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
