@@ -49,6 +49,11 @@ if ( widthPic2Larger == true ) imageHeightRatioPic2 = float (smallerPic2Dimensio
 if ( heightPic2Larger == true ) imageWidthRatioPic2 = float (smallerPic2Dimension) / float (largerPic2Dimension);
 if ( heightPic2Larger == true ) imageHeightRatioPic2 = float (largerPic2Dimension) / float (largerPic2Dimension);
 println (imageWidthRatioPic1, imageHeightRatioPic1, imageWidthRatioPic2, imageHeightRatioPic2); //Verifying Variable Details (Ratios)
+float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
+pic1WidthAdjusted = pic1Width * imageWidthRatioPic1;
+pic1HeightAdjusted = pic1Height * imageHeightRatioPic1;
+pic2WidthAdjusted = pic2Width * imageWidthRatioPic2;
+pic2HeightAdjusted = pic2Height * imageHeightRatioPic2;
 //
 rectXPic1 = displayWidth*1/4;
 rectYPic1 = displayHeight*0;
@@ -60,7 +65,7 @@ rectWidthPic2 = displayWidth*6/8;
 rectHeightPic2 = displayHeight*1/2;
 //
 //Rectangle Layout & Image Printing on Canvas
-rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
-rect(rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2); //Image 2, landscape presentation
+//rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image 1, landscape presentation
+//rect(rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2); //Image 2, landscape presentation
 image(pic1, rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1);
 image(pic2, rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2);
