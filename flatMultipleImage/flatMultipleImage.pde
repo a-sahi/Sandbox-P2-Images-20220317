@@ -5,6 +5,7 @@ PImage pic1, pic2;
 //
 //Geometry
 fullScreen();
+//Landscape Presentation, not square or portrait
 //
 //Populating Variables
 pic1 = loadImage("GettyImages-1133605325-scaled-e1617227898456 (1).jpg"); //Dimensions: 2220 width, 1478 height

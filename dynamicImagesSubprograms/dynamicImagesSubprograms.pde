@@ -12,6 +12,7 @@ color green=#20B954;
 void setup() 
 {
   fullScreen();
+  //Landscape Presentation, not square or portrait
   //
   populatingVariables();
   //
