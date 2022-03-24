@@ -10,7 +10,17 @@ color green=#20B954;
 //
 void setup() 
 {
-
+  fullScreen();
+  //
+  //Populating Variables
+  pic1 = loadImage("GettyImages-1133605325-scaled-e1617227898456 (1).jpg"); //Dimensions: 2220 width, 1478 height
+  pic2 = loadImage("85246.jpg"); //Dimensions: 1920 width, 1080 height
+  //
+  //Aspect Ratio Calculations
+  int pic1Width = 2220;
+  int pic1Height = 1478;
+  int pic2Width = 1920;
+  int pic2Height = 1080;
 }//End setup
 //
 void draw() 
@@ -36,7 +46,7 @@ void mousePressed ()
 
 //
 //Geometry
-fullScreen();
+
 //
 //Populating Variables
 pic1 = loadImage("GettyImages-1133605325-scaled-e1617227898456 (1).jpg"); //Dimensions: 2220 width, 1478 height
